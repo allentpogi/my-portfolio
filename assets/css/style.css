@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 header {
     display: flex;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
@@ -110,6 +116,8 @@ aside p {
 .project-list{
   display: flex;
   flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project {
@@ -129,6 +137,20 @@ aside p {
     border-color: rgba(146, 161, 176, 0.3);
     border-width: 1px;
   }
+
+
+.footer {
+   padding: 30px;
+   clear: both;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+   border-top: groove thin rgba(146, 161, 176, 0.3);
+}
+
+.footer h4 {
+    font-size: 20px;
+}
+
 
 
 /* Tablet smartphones*/
@@ -212,3 +234,4 @@ aside p {
         font-size: 1.3rem;
     }
   }
+  
