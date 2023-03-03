@@ -41,7 +41,6 @@ nav a {
     margin: 0 1rem 0 0;
 }
 
-
 .intro {
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +69,7 @@ nav a {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 
 aside {
@@ -102,6 +102,7 @@ aside p {
 
 .projects {
     width:70%;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 
 .projects h3 {
@@ -114,44 +115,98 @@ aside p {
 }
 
 .project-list{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 1rem;
-  margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .project {
     flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
     border-style: solid;
     border-color: rgba(146, 161, 176, 0.3);
     border-width: 1px;
+    position: relative;
     text-align: center;
-  }
-  
- 
+    color: white;
+    padding: 1rem;
+}
+
+.project img {
+    filter: blur(8px);
+    -webkit-filter: blur(0.1px);
+}
+
 .project1 {
     flex: 2 1 200px;
     border-style: solid;
     border-color: rgba(146, 161, 176, 0.3);
     border-width: 1px;
-  }
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
 
+.project1 img {
+    filter: blur(8px);
+    -webkit-filter: blur(0.2px);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(37, 37, 37);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-me {
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    justify-content: center;
+    display: block;
+}
+
+.contact-me h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;   
+    padding: 1rem; 
+    width: 100%;
+    
+}
+
+.contact-method {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.linkedin {
+    width: auto;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+}
+
+.email {
+    width: auto;
+    padding: 1rem 1rem 1rem 1rem;
+}
 
 .footer {
    padding: 30px;
    clear: both;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    text-align: center;
-   border-top: groove thin rgba(146, 161, 176, 0.3);
+   /*border-top: groove thin rgba(146, 161, 176, 0.3);*/
 }
 
-.footer h4 {
+.footer h5 {
     font-size: 20px;
 }
-
-
 
 /* Tablet smartphones*/
 @media screen and (max-width: 1260px) {
@@ -165,9 +220,9 @@ aside p {
         justify-content: center;
         text-align: center;
     }
-  }
+}
 
- /* Small smartphones*/
+/* Small smartphones*/
 @media screen and (max-width: 736px) {
     nav {
         width: 60%;
@@ -175,10 +230,9 @@ aside p {
     header h1 {
         width: 40%;
     }
-  }
+}
 
-
-  /* Smaller smartphones*/
+/* Smaller smartphones*/
 @media screen and (max-width: 650px) {
     header {
         flex-wrap: wrap;
@@ -193,8 +247,8 @@ aside p {
         vertical-align: middle;
         text-align: center;
         padding: 0 0 0 0;
-    }
-    
+}
+
     nav {
         margin: 0.2rem 0.2rem 0.2rem 0.2rem;
         padding: 0 0 0 0;
@@ -209,9 +263,9 @@ aside p {
         color: black;
         float: none
     }
-  }
-  
-   /* Small smartphones*/
+}
+
+/* Small smartphones*/
 @media screen and (max-width: 1470px) {
     aside {
         width: 50%;
@@ -219,9 +273,9 @@ aside p {
     .projects {
         width: 50%;
     }
-  }
+}
 
-     /* Small smartphones*/
+/* Small smartphones*/
 @media screen and (max-width: 900px) {
     aside {
         width: 100%;
@@ -233,5 +287,4 @@ aside p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.3rem;
     }
-  }
-  
+}
